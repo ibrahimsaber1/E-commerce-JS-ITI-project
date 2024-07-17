@@ -7,10 +7,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div>
+        <h2>Search Products</h2>
+        <input type="text" id="searchInput" placeholder="Search products">
+        <button onclick="searchProducts(document.getElementById('searchInput').value)">Search</button>
+    </div>
     <div id="dataDisplay">
         <!-- JSON data will be displayed here :) -->
     </div>
     <script src="script.js"></script>
-    <!-- <img  calss="img_p"  src="${product.images[0]}"  alt="${product.title}"/> -->
+    
 </body>
 </html>

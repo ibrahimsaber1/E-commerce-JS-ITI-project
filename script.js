@@ -36,3 +36,29 @@ function fetchProducts() {
 }
 
 fetchProducts();
+
+// -------------------------:)
+
+function searchProducts(query) {
+  fetch(`https://dummyjson.com/products/search?q=${query}`)
+    .then((res) => res.json())
+    .then((data) => {
+      let html = data.products
+        .map((product) => {
+          return `
+          <div class="single_p">
+            <p><img calss="img_p" style="width: 6em;" src="${product.images[0]}" alt="${product.title}"></p>
+            <p>Title: ${product.title}</p>
+            <p>Category: ${product.category}</p>
+            <p>Price: ${product.price}</p>
+            <p>Rating: ${product.rating}</p>
+          </div>
+          `;
+        })
+        .join("");
+      document.querySelector("#dataDisplay").innerHTML = html;
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+}
