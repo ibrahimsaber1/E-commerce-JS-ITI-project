@@ -7,11 +7,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <h2>Search Products</h2>
-        <input type="text" id="searchInput" placeholder="Search products">
-        <button onclick="searchProducts(document.getElementById('searchInput').value)">Search</button>
-    </div>
+    <header>
+        <div>
+            <h1>Ecommerce Pro</h1>
+        </div>
+        <div class="Search-div">
+            <h2>Search Products</h2>
+            <input type="text" id="searchInput" placeholder="Search products">
+            <button onclick="searchProducts(document.getElementById('searchInput').value)">Search</button>
+        </div>
+    </header>
+
     <div id="dataDisplay">
         <!-- JSON data will be displayed here :) -->
     </div>

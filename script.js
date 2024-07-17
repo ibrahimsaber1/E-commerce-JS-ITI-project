@@ -1,9 +1,6 @@
 function fetchProducts() {
   fetch("https://dummyjson.com/products")
     .then((res) => {
-      if (!res.ok) {
-        throw Error("Error");
-      }
       return res.json();
     })
     .then((data) => {
@@ -37,7 +34,7 @@ function fetchProducts() {
 
 fetchProducts();
 
-// -------------------------:)
+// ----------search for the products---------------:)
 
 function searchProducts(query) {
   fetch(`https://dummyjson.com/products/search?q=${query}`)
