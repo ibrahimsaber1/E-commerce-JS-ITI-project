@@ -9,17 +9,22 @@
 <body>
     <header>
         <div>
-            <h1>Ecommerce Pro</h1>
+            <h1><a class="pro-logo" href="/">Ecommerce Pro</a></h1>
         </div>
+        <nav class="header-nav">
+            <p><a class="header-nav-a" href="cart.html">Cart</a></p>
+            <p><a class="header-nav-a" href="login.html">Login</a></p>
+            <p><a class="header-nav-a" href="profile.html">profile</a></p>
+        </nav>
         <div class="Search-div">
             <h2>Search Products</h2>
-            <input type="text" id="searchInput" placeholder="Search products">
+            <input type="text" id="searchInput" placeholder="Enter the product here">
             <button onclick="searchProducts(document.getElementById('searchInput').value)">Search</button>
         </div>
     </header>
 
     <div id="dataDisplay">
-        <!-- JSON data will be displayed here :) -->
+        <!-- (: JSON will aperer here :) -->
     </div>
     <script src="script.js"></script>
     

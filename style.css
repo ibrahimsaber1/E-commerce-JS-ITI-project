@@ -10,12 +10,45 @@ header{
     background-color: rgb(102, 102, 160);
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-header div{
+header div,nav{
     padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
+
+.pro-logo{
+    text-decoration: none;
+    color: white;
+}
+header nav{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+.header-nav-a{
+    grid-auto-rows: 50px;
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+}
+
+.Search-div{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.Search-div input, button{
+    height: 25px;
+}
+
+
 #dataDisplay {
     display: flex;
     flex-direction: row;
